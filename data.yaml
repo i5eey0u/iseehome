@@ -1,9 +1,11 @@
 points:
   - name: secure
+    icon: fa-solid fa-lock
     desc: >
       we encrypt all conversations (using "end-to-end encryption")
       to make sure everything you write to someone **stays only between you two**.
   - name: minimalist
+    icon: fa-solid fa-magnifying-glass
     desc: |
       we intentionally removed all technologies that, under disguise of convenience,
       only make us more disconnected: group chats, avatars, voice notes, photos, videos, etc.
@@ -13,6 +15,7 @@ points:
       they won't just send a photo: they will tell you about it using their
       **authentic texting**.
   - name: genuine connections
+    icon: fa-solid fa-heart
     desc: >
       no search, no algorithm, no bots. our state-of-the-art ways to make new friends
       ensure that you **find like-minded humans** always staying in full control
@@ -20,19 +23,23 @@ points:
 
 discovery:
   - name: invites
+    icon: fa-solid fa-envelope
     desc: >
       if you already have a friend on the platform, ask them for an invite
       and start chatting rightaway!
   - name: friends of friends
+    icon: fa-solid fa-handshake
     desc: >
       you can allow your friend to connect you with their friends.
       meet other people that your besties trust!
   - name: hubs
+    icon: fa-solid fa-list
     desc: >
       hubs are categories of interests, like "learning Dutch" or "dating Amsterdam".
       select any hub from the list, and the next person that selects the same hub
       gets matched with you. what's next? chat!
   - name: words
+    icon: fa-solid fa-phone
     desc: >
       can't find a hub that suits you? type in a special input form any word or text,
       like "lord of the rings" or "cheese" and get connected with the next person
@@ -48,4 +55,5 @@ donate_lead: |
 
 donate:
   - name: github
+    icon: fa-brands fa-github
     link: https://github.com/sponsors/orsinium
