@@ -38,4 +38,13 @@
     {% endfor %}
   </section>
 
+  <hr/>
+  <h2 class="text-center">team</h2>
+  <section class="row row-cols-1 row-cols-md-4 g-4 justify-content-center">
+    {% for point in team %}
+      {% include 'card.html.j2' %}
+    {% endfor %}
+  </section>
+
+  <hr/>
 {% endblock %}
