@@ -1,0 +1,37 @@
+# https://taskfile.dev
+
+version: "3"
+
+vars:
+  ART: https://raw.githubusercontent.com/firefly-zero/firefly-art/main
+
+tasks:
+  install-deps:
+    status:
+      - test -f .venv/bin/python
+    sources:
+      - requirements.txt
+    cmds:
+      - python3 -m venv .venv
+      - .venv/bin/pip install -r requirements.txt
+  fetch-bootstrap:
+    status:
+      - test -f bootstrap.min.css
+    cmds:
+      - wget https://bootswatch.com/5/brite/bootstrap.min.css -O bootstrap.min.css
+  build:
+    deps:
+      - install-deps
+    sources:
+      - templates/*.j2
+      - data.yaml
+    generates:
+      - public
+    cmds:
+      - task: fetch-bootstrap
+      - mkdir -p public
+      - .venv/bin/python3 generate.py
+      - cp bootstrap.min.css public/
+
+  default:
+    - task: build

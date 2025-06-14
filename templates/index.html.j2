@@ -1,0 +1,13 @@
+{% extends "base.html.j2" %}
+{% block body %}
+
+  <header class="text-center">
+    <h1>iseeyou</h1>
+    <p class="lead">
+      {% markdown %}
+        {{short}}
+      {% endmarkdown %}
+    </p>
+  </header>
+
+{% endblock %}
