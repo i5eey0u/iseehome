@@ -4,10 +4,60 @@
   <header class="text-center">
     <h1>iseeyou</h1>
     <p class="lead">
-      {% markdown %}
-        {{short}}
-      {% endmarkdown %}
+      <b>secure</b> and <b>minimalist</b> messenger for building <b>genuine connections</b>
     </p>
   </header>
+
+  <section class="row row-cols-1 row-cols-md-3 g-4">
+    {% for point in points %}
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-header bg-primary">
+            <h4 class="card-title">{{ point["name"] }}</h4>
+          </div>
+          <div class="card-body">
+            {% markdown %}
+              {{ point["desc"] }}
+            {% endmarkdown %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </section>
+
+  <hr/>
+  <h2 class="text-center">how to make friends</h2>
+  <section class="row row-cols-1 row-cols-md-4 g-4">
+    {% for point in discovery %}
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-header bg-primary">
+            <h4 class="card-title">{{ point["name"] }}</h4>
+          </div>
+          <div class="card-body">
+            {% markdown %}
+              {{ point["desc"] }}
+            {% endmarkdown %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </section>
+
+  <hr/>
+  <section class="text-center">
+    <h2>It's 100% free!</h2>
+    <div style="max-width: 50%" class="mx-auto">
+      {% markdown %}
+        {{ donate_lead }}
+      {% endmarkdown %}
+    </div>
+    {% for btn in donate %}
+        <a href="{{ btn['link'] }}" class="btn btn-primary">
+          {{ btn['name'] }}
+        </a>
+    {% endfor %}
+
+  </section>
 
 {% endblock %}

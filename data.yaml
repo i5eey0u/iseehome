@@ -1,16 +1,15 @@
-short: >
-  **secure** and **minimalist** messenger for building **genuine connections**
-
 points:
   - name: secure
     desc: >
       we encrypt all conversations (using "end-to-end encryption")
       to make sure everything you write to someone **stays only between you two**.
   - name: minimalist
-    desc: >
-      we intentionally removed all technologies that, under disguis of convenience,
+    desc: |
+      we intentionally removed all technologies that, under disguise of convenience,
       only make us more disconnected: group chats, avatars, voice notes, photos, videos, etc.
-      all that's left are text one-to-one chats. if your friend saw something funny today,
+      all that's left are text one-to-one chats.
+
+      if your friend saw something funny today,
       they won't just send a photo: they will tell you about it using their
       **authentic texting**.
   - name: genuine connections
@@ -39,3 +38,14 @@ discovery:
       like "lord of the rings" or "cheese" and get connected with the next person
       that types in the same word. discover other nerds with the same niche interests
       as you!
+
+donate_lead: |
+  there are no ads and no premium-features. the project is made by nerds for nerds
+  to give everyone a chance to connect to like-minded humans.
+
+  if you like the project, please, **support us**. all donations will go towards
+  paying server costs and salaries for engineers running them. we don't make any profit.
+
+donate:
+  - name: github
+    link: https://github.com/sponsors/orsinium
