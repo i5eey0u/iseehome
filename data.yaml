@@ -35,7 +35,7 @@ discovery:
   - name: hubs
     icon: fa-solid fa-list
     desc: >
-      hubs are categories of interests, like "learning Dutch" or "dating Amsterdam".
+      hubs are generic categories, like "making friends" or "casual chatting".
       select any hub from the list, and the next person that selects the same hub
       gets matched with you. what's next? chat!
   - name: words
