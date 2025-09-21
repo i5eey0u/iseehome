@@ -61,9 +61,7 @@ donate:
 team:
   - name: gram
     icon: fa-solid fa-server
-    desc: >
-      principal software engineer from amsterdam. i make the backend.
-  - name: sanziana
-    icon: fa-solid fa-mobile
-    desc: >
-      romanian first year comp sci at UT. i make the app.
+    desc: |
+      principal software engineer from amsterdam. yep, it's just me!
+
+      [orsinium.dev](https://orsinium.dev/)
