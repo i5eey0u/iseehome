@@ -55,4 +55,4 @@ These Terms are governed by the laws of the Netherlands. Any disputes will be su
 
 If you have questions about these Terms, please contact us at:
 
-**Email:** [mail@example.com](mailto:mail@example.com)
+**Email:** [nikita@orsinium.dev](mailto:nikita@orsinium.dev)
